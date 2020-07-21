@@ -1,0 +1,9 @@
+<!--pages/example1/index.wxml-->
+<view class="title">保存图片example</view>
+
+<!-- 要利用按钮组件的开放能力 -->
+<button open-type="{{ isAuthorization ? 'openSetting' : '' }}"
+bindopensetting="handleOpensetting"
+>获取保存授权</button>
+
+<button bindtap="handleSaveImg">保存图片</button>
