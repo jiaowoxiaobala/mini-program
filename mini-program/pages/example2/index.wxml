@@ -1,0 +1,5 @@
+<!--pages/example2/index.wxml-->
+<view class="title">测试setData和自定义转发内容</view>
+<button bindtap="handleBtnClick">按钮</button>
+<!-- 给按钮设置open-type="share" -->
+<button open-type="share">分享</button>

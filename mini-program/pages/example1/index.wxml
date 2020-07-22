@@ -1,9 +1,8 @@
 <!--pages/example1/index.wxml-->
-<view class="title">保存图片example</view>
+<view class="title">测试保存图片</view>
 
+<button wx:if="{{ isAuthorization }}" bindtap="handleSaveImg">保存图片</button>
 <!-- 要利用按钮组件的开放能力 -->
-<button open-type="{{ isAuthorization ? 'openSetting' : '' }}"
+<button wx:else open-type="openSetting"
 bindopensetting="handleOpensetting"
->获取保存授权</button>
-
-<button bindtap="handleSaveImg">保存图片</button>
+>保存图片</button>
