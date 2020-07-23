@@ -49,7 +49,17 @@ Page({
         isAuthorization: true
       })
     }
+  },
+  handleBtnClick() {
+    // 关闭当前页面,返回上一页面或多级页面
+    wx.navigateBack({
+      // 如果返回的页面数大于现有页面数,则返回到首页
+      delta: 1
+    })
+  },
+  onLoad(option) {
+    // 获取路由传递的参数
+    console.log(option)
   }
-
 })
 // 注: 设置界面只会出现小程序已经向用户请求过的权限

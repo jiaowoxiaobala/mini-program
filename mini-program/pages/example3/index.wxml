@@ -1,2 +1,21 @@
 <!--pages/example3/index.wxml-->
-<text>pages/example3/index.wxml</text>
+<view class="title">测试路由</view>
+<button data-route="navigateTo" 
+bindtap="handleBtnClick"
+>navigateTo跳转</button>
+
+<button data-route="redirect"
+bindtap="handleBtnClick"
+>redirect跳转</button>
+
+<button data-route="relaunch"
+bindtap="handleBtnClick"
+>relaunch跳转</button>
+
+<button data-route="swicthTab"
+bindtap="handleBtnClick"
+>swicthTab跳转</button>
+
+<button data-route="pages" 
+bindtap="handleBtnClick"
+>获取页面栈</button>

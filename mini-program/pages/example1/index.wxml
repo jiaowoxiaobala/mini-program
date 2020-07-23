@@ -6,3 +6,5 @@
 <button wx:else open-type="openSetting"
 bindopensetting="handleOpensetting"
 >保存图片</button>
+
+<button bindtap="handleBtnClick">navigateBack跳转</button>
