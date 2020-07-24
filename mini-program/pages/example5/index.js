@@ -7,60 +7,38 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  // 当前是tab页面时点击原生tab时触发
+  onTabItemTap(e) {
+    console.log(e)
+  },
+  // 监听用户点击右上角菜单'收藏'按钮的行为,可自定义收藏内容
+  // 注: 和onShareAppMessage及onShareTimeLine类似,都是返回一个对象自定义内容
+  onAddToFavorites() {
+    return {
+      title: '自定义收藏内容',
+      imageUrl: '/images/wechat.jpg'
+    }
+  },
+  // 监听分享到朋友圈按钮的行为,可自定义分享内容
+  // 注: 基础库要求高,需要做好兼容
+  onShareTimeline() {
+    return {
+      title: '自定义分享到朋友圈',
+      imageUrl: '/images/wechat.jpg'
+    }
+  },
+  // 监听用户上拉触底事件,可以通过onReachBottomDistance设置触发距离
+  onReachBottom() {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleBtnClick() {
+    // 返回一个selectorQuery对象实例,可以获取节点信息
+    // 注: 在自定义组件或包含自定义组件的页面中,使用
+    // this.createSelectorQuery()来代替
+    const query = wx.createSelectorQuery();
+    query.select('#btn').boundingClientRect(res => {
+      // 对应的元素信息就在res对象里
+      console.log(res)
+    }).exec();
   }
 })

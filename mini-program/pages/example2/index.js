@@ -19,6 +19,13 @@ Page({
       // setData第二个参数是回调函数,在setData引起界面更新渲染完毕后执行
       console.log(this.data.obj)
     })
+    // 如果通过wx.getUserInfo获取用户信息,需要已获取授权
+    // 注: 本身不会弹出授权框
+    wx.getUserInfo({
+      complete: (res) => {
+        console.log(res)
+      },
+    })
   },
   // 点击设置open-type="share"的按钮时触发
   onShareAppMessage(res) {
@@ -30,6 +37,11 @@ Page({
       // 定义转发的图片
       imageUrl: '/images/wechat.jpg'
     }
+  },
+  // 获取用户信息
+  handleGetUserInfo(e) {
+    const { userInfo } = e.detail;
+    console.log(userInfo);
   }
 })
 // 注: 只有定义了此事件处理函数,右上角菜单才会显示'转发'按钮

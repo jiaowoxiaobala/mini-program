@@ -1,5 +1,8 @@
 <!--pages/example2/index.wxml-->
-<view class="title">测试setData和自定义转发内容</view>
+<view class="title">测试自定义转发内容/获取用户信息</view>
 <button bindtap="handleBtnClick">按钮</button>
 <!-- 给按钮设置open-type="share" -->
 <button open-type="share">分享</button>
+
+<!-- 给按钮设置getUserInfo后,可以在bindgetuserinfo事件的回调的参数中获取用户信息 -->
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>

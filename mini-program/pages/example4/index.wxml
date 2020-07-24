@@ -1,2 +1,33 @@
 <!--pages/example4/index.wxml-->
 <view class="title">测试scroll-view</view>
+<!-- 横向滚动 -->
+<!-- 布尔值的属性设为true时,直接写上去即可 -->
+<scroll-view scroll-x>
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+</scroll-view>
+<!-- scroll-view横向滚动的条件
+自身设置white-space: nowrap和scroll-x
+内部子元素行内元素或行内块元素
+ -->
+
+ <!-- 纵向滚动 -->
+<scroll-view scroll-top="100"
+scroll-with-animation
+scroll-y 
+enable-back-to-top
+bindscroll="handleScroll">
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+  <view class="scroll-view-item"></view>
+</scroll-view>
+ <!-- scroll-view纵向滚动的条件
+ 自身设置一个固定的高度和scroll-y
+  -->
+
+<!-- 注: scroll-with-animation属性可以给scroll-top/scroll-left设置
+动画效果 -->

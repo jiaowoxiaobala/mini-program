@@ -1,2 +1,4 @@
 <!--pages/example5/index.wxml-->
-<text>pages/example5/index.wxml</text>
+<view class="title">测试节点选择器及分享朋友圈/收藏</view>
+
+<button id="btn" bindtap="handleBtnClick">按钮</button>
