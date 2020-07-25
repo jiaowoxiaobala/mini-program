@@ -1,0 +1,29 @@
+<!--pages/example6/index.wxml-->
+<view class="title">测试open-data/交互框</view>
+
+<!-- 可以展示微信开放的数据 -->
+<!-- 无法设置open-data组件的样式 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userProvince"></open-data>
+
+<!-- 注: 不需要获取授权就可以展示用户的一些信息 -->
+
+<button 
+bindtap="handleBtnClick"
+data-type="showActionSheet"
+>showActionSheet</button>
+
+<button
+bindtap="handleBtnClick"
+data-type="showToast"
+>showToast</button>
+
+<button
+bindtap="handleBtnClick"
+data-type="showLoading"
+>showLoading</button>
+
+<button
+bindtap="handleBtnClick"
+data-type="showModal"
+>showModal</button>

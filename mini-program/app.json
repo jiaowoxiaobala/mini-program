@@ -1,7 +1,11 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/example1/index"
+    "pages/example5/index",
+    "pages/example4/index",
+    "pages/example1/index",
+    "pages/example2/index",
+    "pages/example3/index",
+    "pages/example6/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,5 +14,17 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/example4/index",
+        "text": "example4"
+      },
+      {
+        "pagePath": "pages/example5/index",
+        "text": "example5"
+      }
+    ]
+  }
 }
