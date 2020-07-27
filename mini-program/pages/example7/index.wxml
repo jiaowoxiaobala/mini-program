@@ -1,0 +1,9 @@
+<!--pages/example7/index.wxml-->
+<view class="title">测试低版本兼容的方式/导航栏相关API</view>
+<!-- 做低版本兼容的两种方式
+  -1.用wx.canIUse判断
+  -2.用wx.getSystemInfo获取版本基础库判断
+ -->
+<button bindtap="handleBtnClick">按钮</button>
+
+<button bindtap="handleSetNavigation">设置导航栏</button>

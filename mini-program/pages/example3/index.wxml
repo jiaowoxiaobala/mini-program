@@ -1,5 +1,5 @@
 <!--pages/example3/index.wxml-->
-<view class="title">测试路由</view>
+<view class="title">测试路由/EventChannel</view>
 <button data-route="navigateTo" 
 bindtap="handleBtnClick"
 >navigateTo跳转</button>

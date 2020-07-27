@@ -42,6 +42,9 @@ Page({
   handleGetUserInfo(e) {
     const { userInfo } = e.detail;
     console.log(userInfo);
+  },
+  onLoad(option) {
+    console.log(option)
   }
 })
 // 注: 只有定义了此事件处理函数,右上角菜单才会显示'转发'按钮

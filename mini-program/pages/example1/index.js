@@ -60,6 +60,12 @@ Page({
   onLoad(option) {
     // 获取路由传递的参数
     console.log(option)
+    // 获取eventChannel
+    const eventChannel = this.getOpenerEventChannel()
+    // 获取上一个页面通过eventChannel传送的数据
+    eventChannel.on('channel', res => {
+      console.log(res)
+    })
   }
 })
 // 注: 设置界面只会出现小程序已经向用户请求过的权限
