@@ -2,3 +2,8 @@
 <view class="title">测试节点选择器及分享朋友圈/收藏</view>
 
 <button id="btn" bindtap="handleBtnClick">按钮</button>
+
+<input bindconfirm="handleGoPage" 
+bindinput="handleInput" 
+type="number" placeholder="输入数字后点击按钮" />
+<button bindtap="handleGoPage">跳转到指定页面</button>

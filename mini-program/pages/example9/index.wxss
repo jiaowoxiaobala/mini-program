@@ -1,0 +1,4 @@
+/* pages/example9/index.wxss */
+.placeholder {
+  height: 1500rpx;
+}

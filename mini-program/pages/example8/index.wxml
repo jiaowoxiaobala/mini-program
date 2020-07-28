@@ -1,2 +1,11 @@
 <!--pages/example8/index.wxml-->
 <view class="title">测试tabbar相关API</view>
+
+<button data-type="redDot" bindtap="handleBtnClick">设置右上角红点</button>
+<button data-type="text" bindtap="handleBtnClick">设置右上角文本</button>
+<button data-type="content" bindtap="handleBtnClick">设置内容</button>
+<!-- tabbar的显示隐藏可以带动画效果 -->
+<button data-type="setTabBar" bindtap="handleBtnClick">设置tabbar整体样式</button>
+<button data-type="toggle" bindtap="handleBtnClick">切换tabbar显示隐藏</button>
+<button data-type="removeRedDot" bindtap="handleBtnClick">移除红点</button>
+

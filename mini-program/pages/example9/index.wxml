@@ -1,0 +1,7 @@
+<!--pages/example9/index.wxml-->
+<view class="title">测试滚动/页面下拉/取消请求</view>
+<!-- wx.request会返回一个请求任务对象,通过调用这个对象的abort方法可以中断请求 -->
+<button bindtap="handleRequest">发送请求</button>
+
+<view class="placeholder"></view>
+<button bindtap="handleBtnClick">点击滚回顶部</button>

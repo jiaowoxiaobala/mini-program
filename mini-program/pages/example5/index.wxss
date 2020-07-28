@@ -1,1 +1,7 @@
 /* pages/example5/index.wxss */
+input {
+  margin: 30rpx auto 0;
+  width: 350rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 8rpx;
+}

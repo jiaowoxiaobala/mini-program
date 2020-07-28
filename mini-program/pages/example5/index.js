@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    value: 0
   },
   // 当前是tab页面时点击原生tab时触发
   onTabItemTap(e) {
@@ -40,5 +40,22 @@ Page({
       // 对应的元素信息就在res对象里
       console.log(res)
     }).exec();
+  },
+  handleInput({ detail: { value } }) {
+    value && this.setData({
+      value
+    })
+  },
+  handleGoPage() {
+    const { value } = this.data;
+    if (value === '4' || value === '7' || value === '8') {
+      wx.switchTab({
+        url: `/pages/example${value}/index`,
+      });
+      return;
+    }
+    wx.navigateTo({
+      url: `/pages/example${value}/index`,
+    })
   }
 })
