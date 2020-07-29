@@ -1,1 +1,7 @@
 /* pages/example10/index.wxss */
+.ft-color {
+  color: #535d95;
+}
+.ft-size {
+  font-size: 40rpx;
+}

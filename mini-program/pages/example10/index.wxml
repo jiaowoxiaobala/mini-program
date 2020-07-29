@@ -1,2 +1,17 @@
 <!--pages/example10/index.wxml-->
-<text>pages/example10/index.wxml</text>
+<view class="title">测试自定义组件</view>
+
+<!-- 自定义组件 -->
+<!-- 注: 外部类现在可以指定多个class -->
+<Example
+my-class="ft-color ft-size" 
+name="xiaoba" 
+age="23">
+  <!-- 表示使用name为before的slot -->
+  <view class="title" slot="before">小八</view>
+</Example>
+
+<button bindtap="handleBtnClick">按钮</button>
+
+<!-- 使用Component来构造页面的话,可以通过behavior来提取公用的代码段
+比如方法,生命周期,数据等 -->

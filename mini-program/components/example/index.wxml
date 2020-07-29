@@ -1,0 +1,13 @@
+<!--components/example/index.wxml.wxml-->
+<!-- 定义组件需要在对应的json文件中声明component: true -->
+<view class="~title">我是组件</view>
+<!-- slot用于承载组件引用时提供的子节点 -->
+<slot name="before"></slot>
+<slot name="after"></slot>
+<!-- 注: 声明多个slot的化话,需要以name来区分 -->
+
+<!-- 外部样式类一般用于在外部更改组件内部的样式 -->
+<view class="^title my-class">测试外部类</view>
+
+<!-- 注: 组件可以引用父组件或页面的样式类需要加对应的符号即可 
+^号可以引用父类的样式类名,~号可以引用当前页面的样式类名-->

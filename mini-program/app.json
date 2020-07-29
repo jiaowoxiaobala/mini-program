@@ -5,10 +5,14 @@
     "pages/example1/index",
     "pages/example2/index",
     "pages/example3/index",
-    "pages/example6/index"
+    "pages/example6/index",
+    "pages/example7/index",
+    "pages/example8/index",
+    "pages/example9/index",
+    "pages/example10/index"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
@@ -24,6 +28,14 @@
       {
         "pagePath": "pages/example5/index",
         "text": "example5"
+      },
+      {
+        "pagePath": "pages/example7/index",
+        "text": "example7"
+      },
+      {
+        "pagePath": "pages/example8/index",
+        "text": "example8"
       }
     ]
   }

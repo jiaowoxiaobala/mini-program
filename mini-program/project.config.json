@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
@@ -28,7 +28,7 @@
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.12.0",
+	"libVersion": "2.10.4",
 	"appid": "wx4e628d1cbf6358dd",
 	"projectname": "mini-program",
 	"debugOptions": {
@@ -63,8 +63,15 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/example6/index",
-					"pathName": "pages/example6/index",
+					"name": "pages/example10/index",
+					"pathName": "pages/example10/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/example3/index",
+					"pathName": "pages/example3/index",
 					"query": "",
 					"scene": null
 				}
