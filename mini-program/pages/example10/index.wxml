@@ -4,9 +4,11 @@
 <!-- 自定义组件 -->
 <!-- 注: 外部类现在可以指定多个class -->
 <Example
+class="custom-component"
 my-class="ft-color ft-size" 
-name="xiaoba" 
-age="23">
+name="{{ name }}" 
+age="23"
+bindmyevent="handleTrigger">
   <!-- 表示使用name为before的slot -->
   <view class="title" slot="before">小八</view>
 </Example>
@@ -15,3 +17,7 @@ age="23">
 
 <!-- 使用Component来构造页面的话,可以通过behavior来提取公用的代码段
 比如方法,生命周期,数据等 -->
+
+<!-- 父组件可以通过this.selectComponent获取子组件实例对象,这样就
+可以直接访问组件的任意数据和方法
+ -->
