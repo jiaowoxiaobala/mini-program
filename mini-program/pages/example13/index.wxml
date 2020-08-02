@@ -1,0 +1,10 @@
+<!--pages/example13/index.wxml-->
+<view class="title">测试录音</view>
+
+<button wx:if="{{ isAuthorize }}" bindtap="handleBtnClick">开始录音</button>
+
+<button wx:else
+open-type="openSetting"
+bindopensetting="handleOpensetting">获取授权</button>
+
+<button bindtap="handleStopRecord">停止录音</button>

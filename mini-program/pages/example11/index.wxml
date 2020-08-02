@@ -1,2 +1,12 @@
 <!--pages/example11/index.wxml-->
-<text>pages/example11/index.wxml</text>
+<view class="title">测试数据存储</view>
+
+<button data-type="save" bindtap="handleBtnClick">存数据</button>
+
+<button data-type="get" bindtap="handleBtnClick">取数据</button>
+
+<button data-type="remove" bindtap="handleBtnClick">删除数据</button>
+
+<button data-type="info" bindtap="handleBtnClick">获取storage信息</button>
+
+<button data-type="clear" bindtap="handleBtnClick">清除所有storage</button>

@@ -1,0 +1,22 @@
+<!--pages/example12/index.wxml-->
+<view class="title">测试图片相关api</view>
+
+
+<button data-type="preview"
+bindtap="handleBtnClick">预览图片</button>
+
+<button data-type="compress"
+bindtap="handleBtnClick"
+>压缩图片</button>
+
+
+<button data-type="choose"
+bindtap="handleBtnClick"
+>选择图片</button>
+
+<button data-type="file"
+bindtap="handleBtnClick"
+>选择文件</button>
+
+
+<image src="{{ imgSrc }}"></image>

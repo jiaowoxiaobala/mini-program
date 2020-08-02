@@ -63,7 +63,7 @@ Page({
     // 获取eventChannel
     const eventChannel = this.getOpenerEventChannel()
     // 获取上一个页面通过eventChannel传送的数据
-    eventChannel.on('channel', res => {
+    eventChannel['on'] && eventChannel.on('channel', res => {
       console.log(res)
     })
   }
