@@ -1,4 +1,6 @@
 // pages/example11/index.js
+// 获取全局的应用实例
+const app = getApp();
 Page({
   handleBtnClick({ target: { dataset:{ type } } }) {
     switch(type) {
@@ -30,5 +32,12 @@ Page({
       });
       break;
     }
+  },
+  onLoad() {
+    const { name, age } = app.globalData;
+    this.setData({
+      name,
+      age
+    })
   }
 })

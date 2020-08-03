@@ -1,0 +1,26 @@
+<!--pages/example14/index.wxml-->
+<view class="title">测试progress/picker/slider</view>
+
+<progress stroke-width="20"
+activeColor="#535d95"
+percent="100"
+border-radius="8"
+active
+style="padding: 24rpx"
+bindactiveend="handleProgress"
+></progress>
+
+<picker
+mode="region"
+value="{{ ['广东省'] }}"
+bindchange="handleSelectArea"
+class="title">省市区选择器</picker>
+
+<picker
+class="title"
+bindchange="handleSelectPerson"
+value="1" range="{{ range }}">默认选择器</picker>
+
+<slider
+bindchanging="handleSliderChange" 
+show-value></slider>

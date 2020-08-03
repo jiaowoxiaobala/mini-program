@@ -1,0 +1,16 @@
+<!--pages/example15/index.wxml-->
+<view class="title">测试拍照</view>
+<camera device-position="front"
+wx:if="{{ isShow }}"
+flash="off"
+mode="normal"
+style="width:100vw;height:80vh"
+bindtap="handlePhoto"
+></camera>
+<button wx:if="{{ isAuthorize }}"
+bindtap="handleBtnClick">拍照</button>
+<button wx:else
+bindopensetting="handleOpensetting"
+open-type="openSetting">授权</button>
+
+<image src="{{ src }}"></image>
