@@ -1,0 +1,8 @@
+<!--pages/example16/index.wxml-->
+<view class="title">测试定位</view>
+
+<button wx:if="{{ isUserLocation }}" bindtap="handleBtnClick">获取定位</button>
+<button wx:else 
+open-type="openSetting"
+bindopensetting="handleOpenSetting"
+>获取授权</button>
