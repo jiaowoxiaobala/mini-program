@@ -13,7 +13,12 @@ Page({
             success: () => {
               wx.getLocation({
                 success: res => {
-                  console.log(res);
+                  // 还要判断手机是否开启位置信息
+                  wx.getSystemInfo({
+                    success: ({ locationEnabled }) => {
+
+                    }
+                  })
                 }
               })
             },
@@ -30,16 +35,12 @@ Page({
         } else {
           wx.getLocation({
             success: res => {
-              console.log(res);
-              wx.request({
-                url: 'https://geoapi.heweather.net/v2/city/lookup?location=113.88308,22.55329&key=11d5c67f43f745c3a3a12656b548f9d9',
-                success: ({ data }) => {
-                  wx.showToast({
-                    title: `当前在${data.location[0].name}`,
-                    icon: 'none'
-                  })
-                }
-              })
+                wx.getSystemInfo({
+                    success: ({ locationEnabled }) => {
+                      
+                    }
+                })
+
             }
           })
         }

@@ -1,0 +1,10 @@
+<!--pages/example18/index.wxml-->
+<view class="title">测试IntersectionObserver</view>
+<!-- IntersectionObserver是监听目标元素与其祖先或视窗交叉状态的手段
+简单来说,可以观察一个元素是否在视窗可见 -->
+
+<button class="btn {{ isMove && 'is-move' }}">按钮</button>
+
+
+<button class="click-btn" bindtap="handleBtnClick">点击</button>
+<view style="height: 1000px"></view>
