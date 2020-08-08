@@ -6,3 +6,5 @@
 open-type="openSetting"
 bindopensetting="handleOpenSetting"
 >获取授权</button>
+
+<button bindtap="handleBtnClick">打开地图</button>

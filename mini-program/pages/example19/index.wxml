@@ -1,0 +1,11 @@
+<!--pages/example19/index.wxml-->
+<view class="title">测试拨打电话/剪贴板</view>
+
+<button bindtap="handleBtnClick"
+data-type="call">拨打电话</button>
+
+<button bindtap="handleBtnClick"
+data-type="copy">复制微信号</button>
+
+<button bindtap="handleBtnClick"
+data-type="scan">扫一扫</button>

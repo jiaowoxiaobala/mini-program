@@ -53,6 +53,16 @@ Page({
         isUserLocation: true
       })
     }
+  },
+  handleBtnClick() {
+    // 打开地图选择位置
+    wx.chooseLocation({
+      success: res => {
+        console.log(res);
+      },
+      fail: err => {
+        console.log(err);
+      }
+    })
   }
-
 })
